@@ -1,0 +1,19 @@
+---
+title: "Data Product -week 3 assignment"
+author: "xc"
+date: "19 November 2016"
+output: ioslides_presentation
+---
+
+
+## Plotly chart
+
+```{r,echo=FALSE,comment="",message=FALSE,warning= FALSE}
+library(plotly)
+data<-read.csv("data.csv", header = T,sep = ",", quote='',check.names=FALSE,colClasses = "character")
+df<-data[c(1:20),]
+plot_ly(df,x=~radius_worst,y=~texture_worst)
+```
+
+
+## Thanks
